@@ -1,0 +1,24 @@
+<!-- 21/10/24 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <form action="" name="form-name" onsubmit="validateForm()" method="post">
+        <input type="text" name="input-name" placeholder="type here">
+        <input type="submit" value="Submit">
+    <script>
+        function validateForm(){
+            let x = document.forms["form-name"]["input-name"].value;
+            if(x == ""){
+                alert("Name must be filled out")
+            }
+        }
+    </script>
+
+    </form>
+ </body>
+ </html>
